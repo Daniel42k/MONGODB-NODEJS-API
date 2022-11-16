@@ -1,0 +1,48 @@
+###
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+  "Tipodedocumento": "Tarjeta De Identidad",
+  "DocumentodeIdentificación": 1718452174,
+  "Nombres": "Duvan",
+  "Apellidos": "Gonzales",
+  "Dirección": "cr 52 call 5",
+  "CorreoElectronico": "duvisqm@email.com",
+  "TelefonoFijo":3004152045 ,
+  "TelefonoCelular": 3201475899,
+  "LinksAlcomprobanteDeConsignación": "https://www.comprobantedepago.com/",
+  "CodigoICFES": "AC2005",
+  "EstudiaUnfamiliarEnestaUniversidad": "Si",
+  "EstratoSocial": "1",
+  "TipodecolegiodelqueseGraduo":"Publico"
+}
+
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+###
+GET http://localhost:9000/api/users/ HTTP/1.1
+
+###
+PUT http://localhost:9000/api/users  HTTP/1.1
+
+{
+  "Tipodedocumento": "Tarjeta De Identidad",
+  "DocumentodeIdentificación": 151441244,
+  "Nombres": "Duvan",
+  "Apellidos": "Gonzales",
+  "Dirección": "cr 52 call 5",
+  "CorreoElectronico": "duvisqm@email.com",
+  "TelefonoFijo":3004152045 ,
+  "TelefonoCelular": 3201475899,
+  "LinksAlcomprobanteDeConsignación": "https://www.comprobantedepago.com/",
+  "CodigoICFES": "AC2005",
+  "EstudiaUnfamiliarEnestaUniversidad": "Si",
+  "EstratoSocial": "1",
+  "TipodecolegiodelqueseGraduo":"Publico"
+}
+
+###
+DELETE  http://localhost:9000/api/users/6374166ba5e53bd991c9b973 HTTP/1.1
+
